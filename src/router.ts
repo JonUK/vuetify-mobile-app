@@ -1,6 +1,9 @@
 import Vue from 'vue';
 import Router from 'vue-router';
-import Home from './views/Home.vue';
+
+import TopStories from './views/TopStories.vue';
+import CodeExamples from './views/CodeExamples.vue';
+import MyFavorites from './views/MyFavorites.vue';
 
 Vue.use(Router);
 
@@ -10,16 +13,18 @@ export default new Router({
   routes: [
     {
       path: '/',
-      name: 'home',
-      component: Home,
+      name: 'top-stories',
+      component: TopStories
     },
     {
-      path: '/about',
-      name: 'about',
-      // route level code-splitting
-      // this generates a separate chunk (about.[hash].js) for this route
-      // which is lazy-loaded when the route is visited.
-      component: () => import(/* webpackChunkName: "about" */ './views/About.vue'),
+      path: '/code-examples',
+      name: 'code-examples',
+      component: CodeExamples
     },
-  ],
+    {
+      path: '/my-favorites',
+      name: 'my-favorites',
+      component: MyFavorites
+    }
+  ]
 });
