@@ -23,7 +23,7 @@
       BottomNav
     }
    })
-  export default class extends Vue {
+  export default class App extends Vue {
 
   }
 </script>
