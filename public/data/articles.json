@@ -1,0 +1,56 @@
+[
+  {
+    "id": 1,
+    "title": "Vue.js is the absolute rockstar of the JavaScript ecosystem",
+    "content": "Article coming soon",
+    "dateString": "22 Jan 2019",
+    "baseImageName": "winner",
+    "articleType": "TOP_STORY",
+    "isFavourite": true
+  },
+  {
+    "id": 2,
+    "title": "Prettier 1.15 Code Formatter Adds Angular and Vue.js Support",
+    "content": "Article coming soon",
+    "dateString": "21 Jan 2019",
+    "baseImageName": "prettier",
+    "articleType": "CODE_EXAMPLE",
+    "isFavourite": false
+  },
+  {
+    "id": 3,
+    "title": "The hottest tools in coding this year included React and Python",
+    "content": "Article coming soon",
+    "dateString": "20 Jan 2019",
+    "baseImageName": "working",
+    "articleType": "TOP_STORY",
+    "isFavourite": false
+  },
+  {
+    "id": 4,
+    "title": "What’s next for Vue.js? The road to Vue 3.0",
+    "content": "Article coming soon",
+    "dateString": "19 Jan 2019",
+    "baseImageName": "question",
+    "articleType": "CODE_EXAMPLE",
+    "isFavourite": false
+  },
+  {
+    "id": 5,
+    "title": "Creating native mobile apps without writing native code",
+    "content": "Article coming soon",
+    "dateString": "18 Jan 2019",
+    "baseImageName": "phone",
+    "articleType": "TOP_STORY",
+    "isFavourite": true
+  },
+  {
+    "id": 6,
+    "title": "Ionic Announces Alpha Release of Vue.js Integration",
+    "content": "Article coming soon",
+    "dateString": "17 Jan 2019",
+    "baseImageName": "phone2",
+    "articleType": "CODE_EXAMPLE",
+    "isFavourite": false
+  }
+]
