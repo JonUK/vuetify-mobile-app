@@ -1,6 +1,14 @@
 # vuetify-mobile-app
-The Medium article "Creating a Mobile Web App with Vue, Vuetify & Typescript" accompanies this repo.
+The following Medium articles accompany this repo.
+
+# Creating a Mobile Web App with Vue, Vuetify & Typescript — Part 1
 https://medium.com/@JonUK/creating-a-mobile-web-app-with-vue-vuetify-typescript-dc69bed4cd2d
+
+
+# Creating a Mobile Web App with Vue, Vuetify & Typescript — Part 2
+https://medium.com/@JonUK/creating-a-mobile-web-app-with-vue-vuetify-typescript-part-2-ed56b95fe1b1
+
+# Branches
 
 This repo contains several branches that allow you to checkout the code at various stages of development.
 
