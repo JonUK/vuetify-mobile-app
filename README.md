@@ -1,11 +1,16 @@
+
 # vuetify-mobile-app
 The following Medium articles accompany this repo.
 
 ## Creating a Mobile Web App with Vue, Vuetify & Typescript — Part 1
+**Setup project and create framework components utilizing Vuetify**
+
 https://medium.com/@JonUK/creating-a-mobile-web-app-with-vue-vuetify-typescript-dc69bed4cd2d
 
 
 ## Creating a Mobile Web App with Vue, Vuetify & Typescript — Part 2
+**Get data from server and use Vuex for state management**
+
 https://medium.com/@JonUK/creating-a-mobile-web-app-with-vue-vuetify-typescript-part-2-ed56b95fe1b1
 
 ## Branches
