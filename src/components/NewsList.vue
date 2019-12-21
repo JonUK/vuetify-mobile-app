@@ -42,6 +42,6 @@
 
   @Component
   export default class NewsList extends Vue {
-    @Prop({required: true}) newsArticles!: NewsArticle[];
+    @Prop({ type: Array, required: true }) newsArticles!: NewsArticle[];
   }
 </script>

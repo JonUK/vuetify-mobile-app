@@ -48,7 +48,7 @@
 
   @Component
   export default class TopToolbar extends Vue {
-    @Getter("title", {namespace: "topToolbar"}) title!: string;
+    @Getter("title", { namespace: 'topToolbar' }) title!: string;
 
     showMenu: boolean = false;
 
