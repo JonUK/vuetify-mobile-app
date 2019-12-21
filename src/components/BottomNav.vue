@@ -1,23 +1,27 @@
 <template>
 
-  <v-bottom-nav app fixed :value="true">
-
-    <v-btn flat color="primary" :to="{ path: '/'}">
+  <v-bottom-navigation
+    app
+    fixed
+    grow
+    v-model="activeItem"
+    color="primary"
+  >
+    <v-btn value="top" :to="{ path: '/'}">
       <span>Top Stories</span>
       <v-icon>thumb_up</v-icon>
     </v-btn>
 
-    <v-btn flat color="primary" :to="{ name: 'code-examples'}">
+    <v-btn value="code" :to="{ name: 'code-examples'}">
       <span>Code Examples</span>
       <v-icon>code</v-icon>
     </v-btn>
 
-    <v-btn flat color="primary" :to="{ name: 'my-favorites'}">
+    <v-btn value="favorites" :to="{ name: 'my-favorites'}">
       <span>Favorites</span>
       <v-icon>favorite</v-icon>
     </v-btn>
-
-  </v-bottom-nav>
+  </v-bottom-navigation>
 
 </template>
 
@@ -26,6 +30,6 @@
 
   @Component
   export default class BottomNav extends Vue {
-
+    activeItem: string = 'top';
   }
 </script>

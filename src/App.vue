@@ -4,7 +4,7 @@
     <TopToolbar></TopToolbar>
 
     <v-content>
-      <router-view></router-view> 
+      <router-view></router-view>
     </v-content>
 
     <BottomNav></BottomNav>
@@ -17,13 +17,13 @@
   import TopToolbar from './components/TopToolbar.vue';
   import BottomNav from './components/BottomNav.vue';
 
-  @Component({ 
+  @Component({
     components: {
-      TopToolbar ,
+      TopToolbar,
       BottomNav
     }
-   })
-  export default class extends Vue {
+  })
 
+  export default class extends Vue {
   }
 </script>

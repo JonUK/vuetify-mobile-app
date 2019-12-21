@@ -1,10 +1,10 @@
 import Vue from 'vue';
 import Router from 'vue-router';
-import store from './store/store';
+import store from '../store';
 
-import TopStories from './views/TopStories.vue';
-import CodeExamples from './views/CodeExamples.vue';
-import MyFavorites from './views/MyFavorites.vue';
+import TopStories from '../views/TopStories.vue';
+import CodeExamples from '../views/CodeExamples.vue';
+import MyFavorites from '../views/MyFavorites.vue';
 
 Vue.use(Router);
 
