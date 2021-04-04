@@ -43,21 +43,21 @@
 </template>
 
 <script lang="ts">
-  import { Component, Vue } from 'vue-property-decorator';
-  import { Getter } from 'vuex-class';
+import { Component, Vue } from 'vue-property-decorator';
+import { Getter } from 'vuex-class';
 
-  @Component
-  export default class TopToolbar extends Vue {
-    @Getter("title", { namespace: 'topToolbar' }) title!: string;
+@Component
+export default class TopToolbar extends Vue {
+  @Getter('title', { namespace: 'topToolbar' }) title!: string;
 
-    showMenu: boolean = false;
+  showMenu = false;
 
-    toggleMenu(): void {
-      this.showMenu = !this.showMenu;
-    }
-
-    doNothing(): void {
-
-    }
+  toggleMenu (): void {
+    this.showMenu = !this.showMenu;
   }
+
+  doNothing (): void {
+    console.info('Not doing anything!');
+  }
+}
 </script>

@@ -13,7 +13,6 @@ export enum ArticleType {
   CodeExample = 'CODE_EXAMPLE'
 }
 
-
 // Store root state
 export interface RootState {
   topToolbar: TopToolbarState;

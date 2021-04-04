@@ -26,10 +26,16 @@
 </template>
 
 <script lang="ts">
-  import { Component, Vue } from 'vue-property-decorator';
+import { Component, Vue } from 'vue-property-decorator';
 
-  @Component
-  export default class BottomNav extends Vue {
-    activeItem: string = 'top';
-  }
+@Component
+export default class BottomNav extends Vue {
+  activeItem = 'top';
+}
 </script>
+
+<style scoped>
+  .v-btn {
+    letter-spacing: normal;
+  }
+</style>

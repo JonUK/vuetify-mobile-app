@@ -11,7 +11,7 @@ Vue.use(Router);
 class RouteMeta {
   title: string;
 
-  constructor({title}: { title: string }) {
+  constructor ({ title }: { title: string }) {
     this.title = title;
   }
 }
@@ -43,7 +43,6 @@ const router = new Router({
 
 // This callback runs before every route change, including on initial load
 router.beforeEach((to, from, next) => {
-
   const routeMeta = to.meta as RouteMeta;
   store.dispatch('topToolbar/changeTitle', routeMeta.title);
   next();

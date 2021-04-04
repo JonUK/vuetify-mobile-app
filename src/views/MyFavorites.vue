@@ -7,24 +7,24 @@
 </template>
 
 <script lang="ts">
-  import { Component, Vue } from 'vue-property-decorator';
-  import newsService from '../services/newsService';
-  import NewsList from '../components/NewsList.vue';
-  import { ArticleType, NewsArticle } from '../types';
+import { Component, Vue } from 'vue-property-decorator';
+import newsService from '../services/newsService';
+import NewsList from '../components/NewsList.vue';
+import { NewsArticle } from '@/types';
 
-  @Component({
-    components: {
-      NewsList
-    }
-  })
-  export default class TopStories extends Vue {
-    newsArticles: NewsArticle[] = [];
-
-    mounted() {
-      newsService.getFavorites()
-        .then((newsArticles: NewsArticle[]) => {
-          this.newsArticles = newsArticles;
-        });
-    }
+@Component({
+  components: {
+    NewsList
   }
+})
+export default class TopStories extends Vue {
+  newsArticles: NewsArticle[] = [];
+
+  mounted () {
+    newsService.getFavorites()
+      .then((newsArticles: NewsArticle[]) => {
+        this.newsArticles = newsArticles;
+      });
+  }
+}
 </script>

@@ -3,9 +3,9 @@
 
     <TopToolbar></TopToolbar>
 
-    <v-content>
+    <v-main>
       <router-view></router-view>
-    </v-content>
+    </v-main>
 
     <BottomNav></BottomNav>
 
@@ -13,17 +13,16 @@
 </template>
 
 <script lang="ts">
-  import { Component, Vue } from 'vue-property-decorator';
-  import TopToolbar from './components/TopToolbar.vue';
-  import BottomNav from './components/BottomNav.vue';
+import { Component, Vue } from 'vue-property-decorator';
+import TopToolbar from './components/TopToolbar.vue';
+import BottomNav from './components/BottomNav.vue';
 
-  @Component({
-    components: {
-      TopToolbar,
-      BottomNav
-    }
-  })
-
-  export default class extends Vue {
+@Component({
+  components: {
+    TopToolbar,
+    BottomNav
   }
+})
+export default class extends Vue {
+}
 </script>

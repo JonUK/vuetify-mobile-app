@@ -1,8 +1,8 @@
 import { ActionTree, Module, MutationTree, GetterTree } from 'vuex';
-import { TopToolbarState, RootState } from '../../types';
+import { TopToolbarState, RootState } from '@/types';
 
 const state: TopToolbarState = {
-  title: 'Top Stories',
+  title: 'Top Stories'
 };
 
 export const getters: GetterTree<TopToolbarState, RootState> = {
@@ -12,15 +12,15 @@ export const getters: GetterTree<TopToolbarState, RootState> = {
 };
 
 const mutations: MutationTree<TopToolbarState> = {
-  setTitle(theState: TopToolbarState, title: string) {
+  setTitle (theState: TopToolbarState, title: string) {
     theState.title = title;
-  },
+  }
 };
 
 export const actions: ActionTree<TopToolbarState, RootState> = {
-  changeTitle({commit}, title: string) {
+  changeTitle ({ commit }, title: string) {
     commit('setTitle', title);
-  },
+  }
 };
 
 export const topToolbar: Module<TopToolbarState, RootState> = {
